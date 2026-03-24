@@ -1,0 +1,387 @@
+/*ESTILIZAÇÃO DA TELA DE LOGIN/*
+/* Documento CSS, parte com * representa todos os elementos da página de forma fixa */
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: 200;
+    }
+
+button{
+    height: 4.6vh;
+    width: 16vw;
+    border-radius: 20px;
+    border: none;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    background: hsla(167, 68%, 73%, 1);
+
+    background: linear-gradient(90deg, hsla(167, 68%, 73%, 1) 0%, hsla(178, 59%, 48%, 1) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(167, 68%, 73%, 1) 0%, hsla(178, 59%, 48%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(167, 68%, 73%, 1) 0%, hsla(178, 59%, 48%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#8DE9D5", endColorstr="#32C4C0", GradientType=1 );  
+    }
+
+button:hover{
+    background-color: #45dc13;
+    color: white;
+    }
+
+
+a{
+    text-decoration: none;
+}
+
+/* Estilização da página de login, parte com . representa a classe do elemento */
+body{
+    background-color: #93B7BE;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container_login{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.login_p {
+    height: 42vh;
+    width: 26vw;
+    background: #DBD8AE;
+    position: relative;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction:column; 
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    margin-top: 110px;
+}
+
+.login_a{
+    height: 42vh;
+    width: 26vw;
+    background:#94C9A9;
+    position: relative;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    margin-top: 110px;
+}
+
+span{
+    color: #000000;
+}
+
+.inputt{
+    height: 35px;
+    width: 70%;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+h2{
+    margin-top: 8px;
+}
+.titulo{
+    justify-content: center;
+    display: flex;
+    margin-bottom: 0px;
+    font-size: 36px;
+}
+
+/*FIM DA ESTILIZAÇÃO DA TELA DE LOGIN PRINCIPAL/*
+
+/*ESTILIZAÇÃO DO CADASTRO PROFESSOR*/
+
+/* Container centralizado */
+.container_conta{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Caixa principal */
+.criar_conta{
+    height: 52vh;
+    width: 28vw;
+    background: #DBD8AE;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+
+.inputt{
+    height: 35px;
+    width: 300px;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 36px;
+}
+
+h2{
+    margin-top: 15px;
+}
+
+/*ESTILIZAÇÃO DA TELA PRINCIPAL DO PROFESSOR*/
+
+h1{
+    justify-content: center;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 36px;
+}
+
+h2{
+    justify-content: center;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.caixa_tela_p{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/*FIM DA ESTILIZAÇÃO DA TELA PRINCIPAL DO PROFESSOR*/
+
+/*ESTILIZAÇÃO DE CADASTRO DE ALUNOS*/
+
+/* Container centralizado */
+.container_aluno{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+/* Caixa principal */
+.caixa_aluno{
+    width: 100%;
+    max-width: 420px;
+    background: #DBD8AE;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+
+.inputt{
+    height: 35px;
+    width: 300px;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 36px;
+}
+
+h2{
+    margin-top: 15px;
+}
+
+/*FIM DA ESTILIZAÇÃO DE CADASTRO DE ALUNOS*/
+
+/*ESTILIZAÇÃO DA TELA DO ALUNO*/
+
+/* ---------- MENU LATERAL ---------- */
+
+.checkbox_aluno input {
+    display: none;
+}
+
+/* Botão ☰ */
+.botao_label {
+    font-size: 28px;
+    cursor: pointer;
+    padding: 15px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+}
+
+/* Menu escondido */
+.menu {
+    list-style: none;
+    position: fixed;
+    top: 0;
+    left: -220px;
+    width: 220px;
+    height: 100%;
+    background: #2c3e50;
+    padding-top: 70px;
+    transition: 0.3s;
+}
+
+/* Itens do menu */
+.menu li {
+    margin: 5px 0;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    display: block;
+    transition: 0.8s;
+}
+
+.menu a:hover {
+    background: #34495e;
+}
+
+/* Quando marcar o checkbox - mostrar menu */
+#menu-toggle:checked ~ .menu {
+    left: 0px;
+}
+
+/* ---------- MATÉRIAS ---------- */
+
+.materia {
+    background: white;
+    width: 320px;
+    margin: 12px auto;
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: 0.2s;
+}
+
+.materia:hover {
+    transform: translateY(-3px);
+}
+
+.materia b {
+    font-size: 1.2rem;
+    color: #2c3e50;
+
+}
+
+.materia p {
+    margin-top: 6px;
+    color: #555;
+}
+
+
+
+/*FIM DA ESTILIZAÇÃO DA TELA DO ALUNO*/
+
+/* Configuração da logo */
+
+.logo{
+    width: 120px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+footer{
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+
+/* Títulos */
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 2.2rem;
+}
+
+h2 {
+    text-align: center;
+    margin: 10px 0 30px;
+    font-weight: normal;
+    color: #555;
+}
+
+/*Estilizaçao da tela boletim*/
+
+.container_boletim{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.table_bole{
+    border-collapse: collapse;
+    width: 100%;
+    padding-top: 30px;
+}
+.table_bole th{
+    background-color: #2c3e50;
+    color: white;
+    height: 30px;
+    width: 20vw;
+    padding-bottom: 30px;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.table_bole tr{
+    background-color: white;
+    color: black;
+    height: 30px;
+    width: 20vw;
+    padding-bottom: 30px;
+    flex-direction: column;
+
+}
+
+.table_bole td{
+    text-align: center;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
