@@ -1,35 +1,121 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professor</title>
-    <link rel="stylesheet" href="./style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Painel do Professor</title>
+<link rel="stylesheet" href="style.css">
 </head>
-        <header>
-            <a href="index.html">
-                <img src="./logo.png.png" alt="Logo do site" class="logo">
-            </a>
-        </header>
-
-    <body>
-            
-        <div class="container_tela_p">
-
-            <div class="caixa_tela_p">
-                <h2>Bem-vindo, Professor!</h2>
-
-                <a href="./criar_aluno.html"><button class="botao">Gerenciar Alunos</button></a>
-                
-                
-            </div>
-        </div>
-
-        <footer>
-            <p>&copy; 2026 Sistema de Matrícula Escolar. Todos os direitos reservados.</p>
-        </footer>
 
 <body>
-    
+
+<!-- MENU LATERAL -->
+<aside class="sidebar">
+
+    <h2>Professor</h2>
+
+    <nav>
+        <a href="#">🎓 Minhas Turmas</a>
+        <a href="#">👥 Alunos</a>
+        <a href="#">📝 Lançar Notas</a>
+        <a href="index.html">🚪 Sair</a>
+    </nav>
+
+</aside>
+
+<!-- CONTEÚDO PRINCIPAL -->
+<main class="conteudo">
+
+    <header class="topo">
+        <h1>Bem-vindo, Professor!</h1>
+    </header>
+
+    <!-- CARDS DE INFORMAÇÃO -->
+    <section class="cards">
+
+        <div class="card">
+            <h3>Turmas</h3>
+            <p>4</p>
+        </div>
+
+        <div class="card">
+            <h3>Alunos</h3>
+            <p>112</p>
+        </div>
+
+        <div class="card">
+            <h3>Atividades</h3>
+            <p>9</p>
+        </div>
+
+        <div class="card">
+            <h3>Média Geral</h3>
+            <p>7.8</p>
+        </div>
+
+    </section>
+
+    <!-- AÇÕES RÁPIDAS -->
+    <section class="acoes">
+
+        <h2>Ações rápidas</h2>
+
+        <div class="botoes">
+
+            <a href="#" class="botao">➕ Adicionar Atividade</a>
+            <a href="#" class="botao">📝 Lançar Notas</a>
+            <a href="#" class="botao">📋 Ver Turmas</a>
+
+        </div>
+
+    </section>
+
+    <!-- TABELA DE ALUNOS -->
+    <section class="tabela">
+
+        <h2>Alunos da Turma — 3º Ano A</h2>
+
+        <table>
+            <tr>
+                <th>Nome</th>
+                <th>Matrícula</th>
+                <th>Nota</th>
+                <th>Situação</th>
+            </tr>
+
+            <tr>
+                <td>João Silva</td>
+                <td>2026001</td>
+                <td>8.5</td>
+                <td>Aprovado</td>
+            </tr>
+
+            <tr>
+                <td>Maria Souza</td>
+                <td>2026002</td>
+                <td>7.2</td>
+                <td>Aprovado</td>
+            </tr>
+
+            <tr>
+                <td>Pedro Lima</td>
+                <td>2026003</td>
+                <td>5.8</td>
+                <td>Recuperação</td>
+            </tr>
+
+            <tr>
+                <td>Ana Costa</td>
+                <td>2026004</td>
+                <td>9.1</td>
+                <td>Aprovado</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+</main>
+
 </body>
 </html>
