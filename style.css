@@ -23,10 +23,15 @@ body{
     flex-direction:column;
 }
 
+
+
 /* ===== HEADER ===== */
 
 .logo{
-    width:90px;
+    max-width: 180px;
+    position: relative;
+    top: 10px;
+    left: 10px;
 }
 
 /* ===== ÁREA CENTRAL ===== */
@@ -123,6 +128,7 @@ input[type="radio"]{
     border-radius:20px;
     border:1px solid #ccc;
     text-align:center;
+    border: none;
 }
 
 /* ===== BOTÃO ===== */

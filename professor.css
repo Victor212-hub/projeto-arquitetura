@@ -67,6 +67,7 @@ h2{
     padding:25px;
     display:flex;
     flex-direction:column;
+    border-radius:12px;
 }
 
 .sidebar h2{
@@ -94,7 +95,6 @@ h2{
 }
 
 .topo{
-    background:#0daab3;
     padding:10px;
     text-align:center;
     color:white;

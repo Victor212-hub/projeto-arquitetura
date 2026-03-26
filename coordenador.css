@@ -30,7 +30,7 @@ body{
     padding:25px;
     display:flex;
     flex-direction:column;
-    border-radius:10px;
+    border-radius:12px;
 }
 
 .sidebar h2{
@@ -84,6 +84,7 @@ body{
 
 .acoes h2{
     margin-bottom:15px;
+    text-align: center;
 }
 
 .botoes{
@@ -111,6 +112,7 @@ body{
 
 .tabela h2{
     margin-bottom:15px;
+    text-align: center;
 }
 
 table{
