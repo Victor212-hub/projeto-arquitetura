@@ -1,14 +1,14 @@
 /*ESTILIZAÇÃO DA TELA DE LOGIN/*
 /* Documento CSS, parte com * representa todos os elementos da página de forma fixa */
-*{  
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
     font-weight: 200;
-    }
+}
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -16,146 +16,146 @@ a{
 
 /* ===== BODY ===== */
 
-body{
-    background: linear-gradient(135deg,#8aa7ad,#93B7BE);
-    min-height:100vh;
-    display:flex;
-    flex-direction:column;
+body {
+    background: linear-gradient(135deg, #8aa7ad, #93B7BE);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 
 
 /* ===== HEADER ===== */
 
-.logo{
+.logo {
     max-width: 180px;
     position: relative;
-    top: 10px;
     left: 10px;
+    right: 10px;
 }
 
 /* ===== ÁREA CENTRAL ===== */
 
-.area_login{
-    flex:1;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+.area_login {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* ===== CARD ===== */
 
-.card_login{
-    background:white;
-    padding:35px;
-    border-radius:22px;
-    box-shadow:0 12px 35px rgba(0,0,0,0.25);
-    width:360px;
-    text-align:center;
+.card_login {
+    background: white;
+    padding: 35px;
+    border-radius: 22px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+    width: 360px;
+    text-align: center;
 }
 
 /* ===== TÍTULO ===== */
 
-.card_login h2{
-    margin-bottom:20px;
+.card_login h2 {
+    margin-bottom: 20px;
 }
 
 /* ===== ABAS ===== */
 
-.tabs{
-    display:flex;
-    background:#ecf0f1;
-    border-radius:30px;
-    overflow:hidden;
-    margin-bottom:25px;
+.tabs {
+    display: flex;
+    background: #ecf0f1;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-bottom: 25px;
 }
 
-.tabs label{
-    flex:1;
-    padding:10px;
-    cursor:pointer;
-    font-weight:bold;
-    transition:.3s;
+.tabs label {
+    flex: 1;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: .3s;
 }
 
 /* esconder radios */
 
-input[type="radio"]{
-    display:none;
+input[type="radio"] {
+    display: none;
 }
 
 /* destaque aba ativa */
 
-#coord:checked ~ .tabs label[for="coord"],
-#prof:checked ~ .tabs label[for="prof"],
-#aluno:checked ~ .tabs label[for="aluno"]{
-    background:#2c3e50;
-    color:white;
+#coord:checked~.tabs label[for="coord"],
+#prof:checked~.tabs label[for="prof"],
+#aluno:checked~.tabs label[for="aluno"] {
+    background: #2c3e50;
+    color: white;
 }
 
 /* ===== FORMULÁRIOS ===== */
 
-.formularios{
-    position:relative;
-    height:160px;
+.formularios {
+    position: relative;
+    height: 160px;
 }
 
-.form{
-    position:absolute;
-    width:100%;
-    opacity:0;
-    transform:translateY(10px);
-    transition:.3s;
-    pointer-events:none;
+.form {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: .3s;
+    pointer-events: none;
 }
 
 /* mostrar formulário ativo */
 
-#coord:checked ~ .formularios .coord,
-#prof:checked ~ .formularios .prof,
-#aluno:checked ~ .formularios .aluno{
-    opacity:1;
-    transform:translateY(0);
-    pointer-events:auto;
+#coord:checked~.formularios .coord,
+#prof:checked~.formularios .prof,
+#aluno:checked~.formularios .aluno {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
 }
 
 /* ===== INPUTS ===== */
 
-.inputt{
-    width:100%;
-    padding:11px;
-    margin:10px 0;
-    border-radius:20px;
-    border:1px solid #ccc;
-    text-align:center;
+.inputt {
+    width: 100%;
+    padding: 11px;
+    margin: 10px 0;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
     border: none;
 }
 
 /* ===== BOTÃO ===== */
 
-.botao{
-    display:inline-block;
-    width:100%;
-    padding:11px;
-    border-radius:25px;
-    background:#2c3e50;
-    color:white;
-    font-size:16px;
-    cursor:pointer;
-    transition:0.3s;
-    text-decoration:none;
+.botao {
+    display: inline-block;
+    width: 100%;
+    padding: 11px;
+    border-radius: 25px;
+    background: #2c3e50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
 }
 
 
-.botao:hover{
-    background:#34495e;
+.botao:hover {
+    background: #34495e;
 }
 
 
 /*FIM DA ESTILIZAÇÃO DA TELA DE LOGIN PRINCIPAL*/
 
 
-footer{
+footer {
     background: #2c3e50;
     color: white;
     text-align: center;
@@ -177,6 +177,3 @@ h2 {
     font-weight: normal;
     color: #555;
 }
-
-
-
