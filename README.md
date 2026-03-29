@@ -2,20 +2,59 @@
 
 ## Descrição:
 
-Este projeto consiste em um sistema simples de cadastro de alunos, desenvolvido com o objetivo de facilitar o gerenciamento de informações acadêmicas. Através dele, é possível registrar, visualizar, editar e excluir dados de estudantes de forma prática e organizada.
+Protótipo front-end de um Sistema de Matrícula Escolar desenvolvido com HTML e CSS para fins acadêmicos na disciplina de Arquitetura de Software.
+
+O sistema simula funcionalidades básicas de um ambiente escolar, com acesso diferenciado para professores e alunos, cadastro de estudantes e visualização de informações acadêmicas.
 
 ## projeto de arquitetura em desenvolvimento no curso de Sistema da Informação (S.I) Maurício de Nassau https://github.com/Victor212-hub/projeto-arquitetura
 
 ## Funcionalidades:
 
-Cadastrar novos alunos.
-Listar alunos cadastrados.
-Editar informações dos alunos.
-Remover alunos do sistema.
+### Professor
+
+Criar conta
+
+Fazer login
+
+Cadastrar alunos
+
+Gerenciar notas
+
+Acessar painel administrativo
+
+### Aluno
+
+Fazer login com matrícula
+
+botão para menu lateral
+
+Visualizar disciplinas
+
+Consultar boletim
+
+Acessar perfil pessoal
+
+Estrutura das telas
+
+index.html — Login
+
+criar_conta.html — Cadastro de professor
+
+criar_aluno.html — Cadastro de aluno
+
+tela_professor.html — Painel do professor
+
+tela_aluno.html — Página inicial do aluno
+
+perfil_aluno.html — Perfil do aluno
+
+boletim_aluno.html — Boletim escolar
+
+notas.html — Gerenciamento de notas
 
 ## Tecnologias Utilizadas:
 
-HTML e CSS.
+HTML5 e CSS3.
 
 
 | Tela  do Professor | Tela do Coordenador | Tela do Aluno |
