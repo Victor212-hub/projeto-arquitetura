@@ -1,4 +1,5 @@
 import logo from './assets/logo.png.png';
+import './styles/login.css';
 
 function App() {
   return (
@@ -6,11 +7,12 @@ function App() {
       <div className="area_login">
 
         <div className="card_login">
+          <img src={logo} alt="Logo do Sistema de Matrícula" className="logo" />
 
           <h2>Acesso ao sistema</h2>
 
           {/* CONTROLES (abas) */}
-          <input type="radio" name="perfil" id="coord" checked />
+          <input type="radio" name="perfil" id="coord" defaultChecked />
           <input type="radio" name="perfil" id="prof" />
           <input type="radio" name="perfil" id="aluno" />
 

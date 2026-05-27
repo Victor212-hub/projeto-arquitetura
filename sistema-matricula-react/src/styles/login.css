@@ -31,7 +31,7 @@ body {
 /* ===== ÁREA CENTRAL ===== */
 
 .area_login {
-    flex: 1;
+    min-height: 95vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,10 +41,10 @@ body {
 
 .card_login {
     background: white;
-    padding: 35px;
+    padding: 28px;
     border-radius: 22px;
     box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
-    width: 360px;
+    width: 450px;
     text-align: center;
 }
 
@@ -153,5 +153,10 @@ footer {
     margin-top: auto;
 }
 
+.logo_login {
+  width: 140px;
+  display: block;
+  margin: 0 auto 16px;
+}
 /*FIM DA ESTILIZAÇÃO DA TELA DE LOGIN PRINCIPAL/*
 
