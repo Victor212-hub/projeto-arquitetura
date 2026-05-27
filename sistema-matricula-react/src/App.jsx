@@ -1,16 +1,16 @@
 import Login from './pages/Login'
-import{ useState} from 'react'
-import Login from './pages/Login'
+import { useState } from 'react'
+import Coordenador from './pages/Coordenador'
 
 function App() {
-  const[paginalAtual, setPaginaAtual] = useState('login')
+  const[paginaAtual, setPaginaAtual] = useState('login')
 
   if (paginaAtual === 'login') {
     return <Login mudarPagina={setPaginaAtual} />
   }
 
   if (paginalAtual === 'coordenador') {
-    return <h1>Tela do Coordenador</h1>
+    return <Coordenador mudarPagina={setPaginaAtual} />
   }
 
   if (paginaAtual === 'professor') {
