@@ -10,7 +10,7 @@ body {
   color: #1f2937;
 }
 
-/* ===== BODY ===== */
+/*  BODY  */
 
 body {
     background: linear-gradient(135deg, #8aa7ad, #93B7BE);
@@ -19,7 +19,7 @@ body {
     flex-direction: column;
 }
 
-/* ===== HEADER ===== */
+/*  HEADER  */
 
 .logo {
     max-width: 180px;
@@ -28,33 +28,34 @@ body {
     right: 10px;
 }
 
-/* ===== ÁREA CENTRAL ===== */
+/*  ÁREA CENTRAL  */
 
 .area_login {
-    min-height: 95vh;
+    min-height: 93vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/* ===== CARD ===== */
+/*  CARD  */
 
 .card_login {
     background: white;
-    padding: 28px;
+    padding: 30px;
     border-radius: 22px;
     box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
     width: 450px;
     text-align: center;
 }
 
-/* ===== TÍTULO ===== */
+/*  TÍTULO  */
 
 .card_login h2 {
     margin-bottom: 20px;
+    margin-top: -20px;
 }
 
-/* ===== ABAS ===== */
+/*  ABAS  */
 
 .tabs {
     display: flex;
@@ -87,7 +88,7 @@ input[type="radio"] {
     color: white;
 }
 
-/* ===== FORMULÁRIOS ===== */
+/*  FORMULÁRIOS  */
 
 .formularios {
     position: relative;
@@ -113,7 +114,7 @@ input[type="radio"] {
     pointer-events: auto;
 }
 
-/* ===== INPUTS ===== */
+/*  INPUTS  */
 
 .inputt {
     width: 100%;
@@ -125,7 +126,7 @@ input[type="radio"] {
     border: none;
 }
 
-/* ===== BOTÃO ===== */
+/*  BOTÃO  */
 
 .botao{
     display:inline-block;
@@ -154,9 +155,9 @@ footer {
 }
 
 .logo_login {
-  width: 140px;
+  width: 10px;
   display: block;
-  margin: 0 auto 16px;
+  
 }
 /*FIM DA ESTILIZAÇÃO DA TELA DE LOGIN PRINCIPAL/*
 
