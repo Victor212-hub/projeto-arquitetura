@@ -30,7 +30,7 @@ function Login({ mudarPagina}) {
             <form className="form coord">
               <input className="inputt" type="email" placeholder="Email institucional 📩" required />
               <input className="inputt" type="password" placeholder="Senha 🔐" required />
-              <button className="botao" onClick={() => mudarPagina('coordenador')}>Entrar</button>
+              <button className="botao" type="button" onClick={() => mudarPagina('coordenador')}>Entrar</button>
             </form>
 
             {/* Professor */}

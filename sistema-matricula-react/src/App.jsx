@@ -4,12 +4,12 @@ import Coordenador from './pages/Coordenador'
 
 function App() {
   const[paginaAtual, setPaginaAtual] = useState('login')
-
+console.log('Página atual:', paginaAtual)
   if (paginaAtual === 'login') {
     return <Login mudarPagina={setPaginaAtual} />
   }
 
-  if (paginalAtual === 'coordenador') {
+  if (paginaAtual === 'coordenador') {
     return <Coordenador mudarPagina={setPaginaAtual} />
   }
 

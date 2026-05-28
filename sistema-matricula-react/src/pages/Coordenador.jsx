@@ -1,16 +1,113 @@
-function Coordenador ({ mudarPagina }) {
-    return (
-        <main>
-            <h1>Tela do Coordenador</h1>
+import '../styles/coordenador.css'
 
-            <button type="button" onClick={() => mudarPagina('login')}>
-                Sair
-            </button>
-            
+function Coordenador({ mudarPagina }) {
+  return (
+    <main className="Coordenador">
+      {/* MENU LATERAL */}
+      <aside className="sidebar">
+        <h2>Coordenação</h2>
 
-        </main>
+        <nav>
+          <a href="#">🎓 Alunos</a>
+          <a href="#">👨‍🏫 Professores</a>
+          <a href="#">📚 Turmas</a>
 
-    )
+          <button type="button" onClick={() => mudarPagina('login')}>
+            🚪 Sair
+          </button>
+        </nav>
+      </aside>
+
+      {/* CONTEÚDO PRINCIPAL */}
+      <section className="conteudo">
+        <h2>Tela do Coordenador</h2>
+
+        <header className="topo">
+          <h1>Bem-vindo, Coordenador!</h1>
+        </header>
+
+        <section className="cards">
+          <div className="card">
+            <h3>Alunos</h3>
+            <p>245</p>
+          </div>
+
+          <div className="card">
+            <h3>Professores</h3>
+            <p>32</p>
+          </div>
+
+          <div className="card">
+            <h3>Turmas</h3>
+            <p>18</p>
+          </div>
+
+          <div className="card">
+            <h3>Média Geral</h3>
+            <p>8.4</p>
+          </div>
+        </section>
+
+        <section className="acoes">
+          <h2>Ações rápidas</h2>
+
+          <div className="botoes">
+            <a href="./criar_aluno.html" className="botao">
+              ➕ Cadastrar Aluno
+            </a>
+            <a href="./criar_conta.html" className="botao">
+              ➕ Cadastrar Professor
+            </a>
+            <a href="#" className="botao">
+              ➕ Criar Turma
+            </a>
+          </div>
+        </section>
+
+        <section className="tabela">
+          <h2>Últimos alunos cadastrados</h2>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>Matrícula</th>
+                <th>Turma</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>João Silva</td>
+                <td>2026001</td>
+                <td>3º Ano A</td>
+                <td>Ativo</td>
+              </tr>
+
+              <tr>
+                <td>Maria Souza</td>
+                <td>2026002</td>
+                <td>2º Ano B</td>
+                <td>Ativo</td>
+              </tr>
+
+              <tr>
+                <td>Pedro Lima</td>
+                <td>2026003</td>
+                <td>1º Ano C</td>
+                <td>Ativo</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <footer>
+          <p>&copy; 2026 Sistema de Matrícula Escolar</p>
+        </footer>
+      </section>
+    </main>
+  )
 }
 
 export default Coordenador
