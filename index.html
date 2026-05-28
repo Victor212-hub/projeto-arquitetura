@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -7,10 +8,13 @@
 <link rel="stylesheet" href="style.css">
 </head>
 
+
+<script src="login.js" defer></script>
 <body>
 
 <header class="topo">
-    <img src="./logo.png.png" alt="logo" class="logo">
+
+    <img src="logo.png" alt="logo" class="logo">
     <h1>Sistema de Matrícula Escolar</h1>
 </header>
 
@@ -39,21 +43,21 @@
             <form class="form coord">
                 <input class="inputt" type="email" placeholder="Email institucional 📩" required>
                 <input class="inputt" type="password" placeholder="Senha 🔐" required>
-                <a href="tela_coordenador.html" class="botao">Entrar</a>
+                <button class="botao" onclick="realizarLogin(event, 'tela_coordenador.html')">Entrar</button>
             </form>
 
             <!-- Professor -->
             <form class="form prof">
                 <input class="inputt" type="email" placeholder="Email 📩" required>
                 <input class="inputt" type="password" placeholder="Senha 🔐" required>
-                <a href="tela_professor.html" class="botao">Entrar</a>
+                <button class="botao" onclick="realizarLogin(event, 'tela_professor.html')">Entrar</button>
             </form>
 
             <!-- Aluno -->
             <form class="form aluno">
                 <input class="inputt" type="number" placeholder="Matrícula 📄" required>
                 <input class="inputt" type="password" placeholder="Senha 🔐" required>
-                <a href="tela_aluno.html" class="botao">Entrar</a>
+                <button class="botao" onclick="realizarLogin(event, 'tela_aluno.html')">Entrar</button>
             </form>
 
         </div>
@@ -65,6 +69,14 @@
 <footer>
 <p>&copy; 2026 Sistema de Matrícula Escolar</p>
 </footer>
+<form class="form prof ativa">
+  ...
 
+</form>
+
+
+<script src="js/login.js"></script>
 </body>
 </html>
+
+```
