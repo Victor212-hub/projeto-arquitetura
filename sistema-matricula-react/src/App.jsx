@@ -1,12 +1,12 @@
-import Login from './pages/Login'
 import { useState } from 'react'
+import Login from './pages/Login'
 import Coordenador from './pages/Coordenador'
 import CriarAluno from './pages/CriarAluno'
 import CriarProfessor from './pages/CriarProfessor'
 import Turmas from './pages/Turmas'
 
 function App() {
-  const[paginaAtual, setPaginaAtual] = useState('login')
+  const [paginaAtual, setPaginaAtual] = useState('login')
 
   if (paginaAtual === 'login') {
     return <Login mudarPagina={setPaginaAtual} />
@@ -14,6 +14,18 @@ function App() {
 
   if (paginaAtual === 'coordenador') {
     return <Coordenador mudarPagina={setPaginaAtual} />
+  }
+
+  if (paginaAtual === 'criarAluno') {
+    return <CriarAluno mudarPagina={setPaginaAtual} />
+  }
+
+  if (paginaAtual === 'criarProfessor') {
+    return <CriarProfessor mudarPagina={setPaginaAtual} />
+  }
+
+  if (paginaAtual === 'turmas') {
+    return <Turmas mudarPagina={setPaginaAtual} />
   }
 
   if (paginaAtual === 'professor') {
@@ -25,18 +37,6 @@ function App() {
   }
 
   return <Login mudarPagina={setPaginaAtual} />
-  
-
-  if (paginaAtual === 'criarAluno') {
-  return <CriarAluno mudarPagina={setPaginaAtual} />
 }
 
-if (paginaAtual === 'criarProfessor') {
-  return <CriarProfessor mudarPagina={setPaginaAtual} />
-}
-
-if (paginaAtual === 'turmas') {
-  return <Turmas mudarPagina={setPaginaAtual} />
-}
-}
-export default App
+export default App  

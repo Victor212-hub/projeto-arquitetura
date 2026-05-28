@@ -1,0 +1,48 @@
+.container_aluno {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #8aa7ad, #93b7be);
+}
+
+.caixa_aluno {
+  width: 100%;
+  max-width: 420px;
+  background: #DBD8AE;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.caixa_aluno h2 {
+  margin-bottom: 20px;
+}
+
+.caixa_aluno .inputt {
+  height: 35px;
+  width: 300px;
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.caixa_aluno .botao {
+  background: #2c3e50;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.caixa_aluno .botao:hover {
+  background: #34495e;
+}
+/*FIM DA ESTILIZAÇÃO DE CADASTRO DE ALUNOS*/

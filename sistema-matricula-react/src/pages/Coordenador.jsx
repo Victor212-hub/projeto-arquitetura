@@ -60,7 +60,6 @@ function Coordenador({ mudarPagina }) {
               >
             ➕ Cadastrar Aluno
             </button>
-              
 
            <button className="botao"
             type="button"
