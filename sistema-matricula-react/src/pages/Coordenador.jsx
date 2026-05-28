@@ -51,18 +51,34 @@ function Coordenador({ mudarPagina }) {
         <section className="acoes">
           <h2>Ações rápidas</h2>
 
+        {/* Botões para criar aluno, professor e turma */}
+
           <div className="botoes">
-            <a href="./criar_aluno.html" className="botao">
-              ➕ Cadastrar Aluno
-            </a>
-            <a href="./criar_conta.html" className="botao">
-              ➕ Cadastrar Professor
-            </a>
-            <a href="#" className="botao">
+            <button className="botao"
+            type="button" 
+            onClick ={() => mudarPagina('criarAluno')}
+              >
+            ➕ Cadastrar Aluno
+            </button>
+              
+
+           <button className="botao"
+            type="button"
+            onClick={() => mudarPagina('criarProfessor')}
+            >
+            ➕ Cadastrar Professor
+            </button>
+              
+            <button className="botao" 
+            type="button" 
+            onClick={() => mudarPagina('criarTurma')}>
               ➕ Criar Turma
-            </a>
+            </button>
+
           </div>
         </section>
+
+        {/*Fim da seção de botoes */}
 
         <section className="tabela">
           <h2>Últimos alunos cadastrados</h2>

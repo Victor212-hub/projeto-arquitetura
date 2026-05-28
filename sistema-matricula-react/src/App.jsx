@@ -1,10 +1,13 @@
 import Login from './pages/Login'
 import { useState } from 'react'
 import Coordenador from './pages/Coordenador'
+import CriarAluno from './pages/CriarAluno'
+import CriarProfessor from './pages/CriarProfessor'
+import Turmas from './pages/Turmas'
 
 function App() {
   const[paginaAtual, setPaginaAtual] = useState('login')
-console.log('Página atual:', paginaAtual)
+
   if (paginaAtual === 'login') {
     return <Login mudarPagina={setPaginaAtual} />
   }
@@ -22,7 +25,18 @@ console.log('Página atual:', paginaAtual)
   }
 
   return <Login mudarPagina={setPaginaAtual} />
-  }
+  
 
+  if (paginaAtual === 'criarAluno') {
+  return <CriarAluno mudarPagina={setPaginaAtual} />
+}
 
+if (paginaAtual === 'criarProfessor') {
+  return <CriarProfessor mudarPagina={setPaginaAtual} />
+}
+
+if (paginaAtual === 'turmas') {
+  return <Turmas mudarPagina={setPaginaAtual} />
+}
+}
 export default App
