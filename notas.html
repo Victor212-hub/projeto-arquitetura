@@ -1,105 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-	<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lançamento de Notas</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-        
-    <header>
-        <a href="index.html">
-            <img src="./logo.png.png" alt="Logo do site" class="logo">
-        </a>
-    </header>
-    <H1>Lançamento de notas </H1>
-    
-   <table style="margin:auto;" border="4" cellpadding="10" bordercolor="#121212"
-		<tr>
-<th>Alunos</th>
-<th>Matemática</th>
-<th>Geografia</th>
-<th>Ciências</th>
-<th>Português</th>
-<th>Física</th>
-<th>Química</th>
-</tr>
 
-<tr>
-<td>Aluno 1</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
+<header>
+  <a href="index.html">
+    <img src="./logo.png" alt="Logo do site" class="logo">
+  </a>
+</header>
 
-<tr>
-<td>Aluno 2</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
+<h1>Lançamento de notas</h1>
 
-<tr>
-<td>Aluno 3</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
+<!-- Seletor de turma (simula filtro que viria do banco) -->
+<div style="text-align:center; margin-bottom:16px;">
+  <select id="seletor-turma" onchange="carregarTurma(this.value)"
+    style="padding:8px 16px; border-radius:8px; border:1px solid #ccc;">
+    <option value="">Selecione a turma</option>
+    <option value="3A">3º Ano A</option>
+    <option value="3B">3º Ano B</option>
+    <option value="2A">2º Ano A</option>
+  </select>
+</div>
 
-<tr>
-<td>Aluno 4</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-
-<tr>
-<td>aluno 5</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-
-<tr>
-<td>aluno 6</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-
-</tr> 	
-
+<table id="tabela-notas" style="margin:auto;" border="4" cellpadding="10" bordercolor="#121212">
+  <tr>
+    <th>Alunos</th>
+    <th>Matemática</th>
+    <th>Geografia</th>
+    <th>Ciências</th>
+    <th>Português</th>
+    <th>Física</th>
+    <th>Química</th>
+  </tr>
+  <!-- Linhas geradas pelo JavaScript -->
 </table>
 
+<footer>
+  <p>&copy; 2026 Sistema de Matrícula Escolar. Todos os direitos reservados.</p>
+</footer>
 
-
-
- <footer>
-        <p>&copy; 2026 Sistema de Matrícula Escolar. Todos os direitos reservados.</p>
-    </footer>
-
+<script src="js/notas.js"></script>
 </body>
 </html>
