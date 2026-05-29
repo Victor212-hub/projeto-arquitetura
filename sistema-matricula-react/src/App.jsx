@@ -4,6 +4,7 @@ import Coordenador from './pages/Coordenador'
 import CriarAluno from './pages/CriarAluno'
 import CriarProfessor from './pages/CriarProfessor'
 import CriarTurma from './pages/CriarTurma'
+import Professor from './pages/Professor'
 
 function App() {
   const [paginaAtual, setPaginaAtual] = useState('login')
@@ -29,7 +30,7 @@ function App() {
   }
 
   if (paginaAtual === 'professor') {
-    return <h1>Tela do Professor</h1>
+    return <Professor mudarPagina={setPaginaAtual} />
   }
 
   if (paginaAtual === 'aluno') {
