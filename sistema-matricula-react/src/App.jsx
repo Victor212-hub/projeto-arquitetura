@@ -39,6 +39,14 @@ function App() {
     return <Aluno mudarPagina={setPaginaAtual}/>
   }
 
+  if (paginaAtual === 'perfilAluno'){
+    return <h1>Perfil do Aluno</h1>
+  }
+
+  if (paginaAtual === 'boletimAluno'){
+    return <h1>Boletim do Aluno</h1>
+  }
+
   return <Login mudarPagina={setPaginaAtual} />
 }
 
