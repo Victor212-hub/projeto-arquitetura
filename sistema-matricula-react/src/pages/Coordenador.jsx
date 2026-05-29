@@ -71,7 +71,7 @@ function Coordenador({ mudarPagina }) {
             <button className="botao" 
             type="button" 
             onClick={() => mudarPagina('criarTurma')}>
-              ➕ Criar Turma
+            ➕ Criar Turma
             </button>
 
           </div>

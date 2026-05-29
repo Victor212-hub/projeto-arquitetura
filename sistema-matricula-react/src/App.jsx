@@ -3,7 +3,7 @@ import Login from './pages/Login'
 import Coordenador from './pages/Coordenador'
 import CriarAluno from './pages/CriarAluno'
 import CriarProfessor from './pages/CriarProfessor'
-import Turmas from './pages/Turmas'
+import CriarTurma from './pages/CriarTurma'
 
 function App() {
   const [paginaAtual, setPaginaAtual] = useState('login')
@@ -24,8 +24,8 @@ function App() {
     return <CriarProfessor mudarPagina={setPaginaAtual} />
   }
 
-  if (paginaAtual === 'turmas') {
-    return <Turmas mudarPagina={setPaginaAtual} />
+  if (paginaAtual === 'criarTurma') {
+    return <CriarTurma mudarPagina={setPaginaAtual} />
   }
 
   if (paginaAtual === 'professor') {
@@ -39,4 +39,4 @@ function App() {
   return <Login mudarPagina={setPaginaAtual} />
 }
 
-export default App  
+export default App
