@@ -5,6 +5,8 @@ import CriarAluno from './pages/CriarAluno'
 import CriarProfessor from './pages/CriarProfessor'
 import CriarTurma from './pages/CriarTurma'
 import Professor from './pages/Professor'
+import Aluno from './pages/Aluno'
+
 
 function App() {
   const [paginaAtual, setPaginaAtual] = useState('login')
@@ -34,7 +36,7 @@ function App() {
   }
 
   if (paginaAtual === 'aluno') {
-    return <h1>Tela do Aluno</h1>
+    return <Aluno mudarPagina={setPaginaAtual}/>
   }
 
   return <Login mudarPagina={setPaginaAtual} />
