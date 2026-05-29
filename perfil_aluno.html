@@ -1,82 +1,281 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./aluno.css">
-</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perfil do Aluno</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .area-perfil {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px 20px;
+  }
 
+  .card-perfil {
+    background: white;
+    border-radius: 22px;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.25);
+    padding: 35px;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .card-perfil h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #2c3e50;
+  }
+
+  .info-linha {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ecf0f1;
+    font-size: 15px;
+  }
+
+  .info-linha span:first-child {
+    color: #888;
+    font-weight: bold;
+  }
+
+  .info-linha span:last-child {
+    color: #2c3e50;
+  }
+
+  .campos-edicao {
+    display: none;
+    margin-top: 20px;
+  }
+
+  .campos-edicao label {
+    font-size: 13px;
+    color: #888;
+    margin-left: 4px;
+  }
+
+  .campos-edicao .inputt {
+    width: 100%;
+    background: #ecf0f1;
+    border: 1px solid #ccc;
+    margin-bottom: 4px;
+  }
+
+  .botoes-perfil {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+  }
+
+  .botao-cancelar {
+    display: inline-block;
+    width: 100%;
+    padding: 11px;
+    border-radius: 25px;
+    background: #ecf0f1;
+    color: #2c3e50;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+    text-align: center;
+  }
+
+  .botao-cancelar:hover {
+    background: #bdc3c7;
+  }
+
+  .menu-lateral {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+
+  .menu-lateral a {
+    background: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    color: #2c3e50;
+    font-size: 14px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: 0.3s;
+  }
+
+  .menu-lateral a:hover {
+    background: #2c3e50;
+    color: white;
+  }
+
+  #msg-salvo {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 10px;
+    height: 20px;
+  }
+</style>
+</head>
 <body>
 
-    <header>
-        <a href="index.html">
-            <img src="./logo.png.png" alt="Logo do site" class="logo">
-        </a>
-    </header>
+<header class="topo">
+  <a href="index.html">
+    <img src="./logo.png" alt="Logo do site" class="logo">
+  </a>
+  <h1>Sistema de Matrícula Escolar</h1>
+</header>
 
-    <h1>PERFIL DO ALUNO</h1>
-    
-    <div class="checkbox_aluno">
+<main class="area-perfil">
+  <div style="width:100%; max-width:500px;">
 
-    <input type="checkbox" id="menu-toggle">
-
-    <label for="menu-toggle" class="botao_label">☰</label>
-
-    <ul class="menu">
-        <li><a href="tela_aluno.html">🏠 Início</a></li>
-        <li><a href="perfil_aluno.html">👤 Perfil</a></li>
-        <li><a href="boletim_aluno.html">📄 Boletim</a></li>
-        <li><a href="index.html">🚪 Sair</a></li>
+    <!-- Menu de navegação -->
+    <ul class="menu-lateral">
+      <li><a href="tela_aluno.html">🏠 Início</a></li>
+      <li><a href="perfil_aluno.html">👤 Perfil</a></li>
+      <li><a href="boletim_aluno.html">📄 Boletim</a></li>
+      <li><a href="index.html">🚪 Sair</a></li>
     </ul>
 
-</div>
-    <div class="container_perfil">
+    <div class="card-perfil">
 
-        <div class="perfil">
+      <h2>Perfil do Aluno</h2>
 
+      <!-- Modo visualização -->
+      <div id="modo-visualizacao">
+        <div class="info-linha"><span>Nome</span><span id="ver-nome">João da Silva</span></div>
+        <div class="info-linha"><span>Nascimento</span><span id="ver-nascimento">01/01/2000</span></div>
+        <div class="info-linha"><span>Matrícula</span><span id="ver-matricula">123456</span></div>
+        <div class="info-linha"><span>CPF</span><span id="ver-cpf">123.456.789-00</span></div>
+        <div class="info-linha"><span>RG</span><span id="ver-rg">12.345.678-9</span></div>
+        <div class="info-linha"><span>Curso</span><span id="ver-curso">Engenharia de Software</span></div>
+        <div class="info-linha"><span>Email</span><span id="ver-email">—</span></div>
+        <div class="info-linha"><span>Telefone</span><span id="ver-telefone">—</span></div>
+        <div class="info-linha"><span>Endereço</span><span id="ver-endereco">—</span></div>
+        <div class="info-linha"><span>Bairro</span><span id="ver-bairro">—</span></div>
+        <div class="info-linha"><span>Cidade/Estado</span><span id="ver-cidade">—</span></div>
 
-            <p>Nome: João da Silva</p>
-            <p>Nascimento: 01/01/2000</p>
-            <p>Matrícula: 123456</p>
-            <p>cpf: 123.456.789-00</p>
-            <p>rg: 12.345.678-9</p>
-            <p>Curso: Engenharia de Software</p>
-            <p>Endereço: Rua Exemplo, 123 - Cidade/BA</p>
+        <div class="botoes-perfil">
+          <button class="botao" onclick="ativarEdicao()">✏️ Editar</button>
         </div>
-        <div class="contatos">
-            <h2>CONTATOS</h2>
-            <input class="inputt" type="email" placeholder="sergioclub2@gmail.com">
-            <input class="inputt" type="number" placeholder="(71) 99999-9999">
+      </div>
 
-        </div>
-        <div class="endereco">
-            <h2>ENDEREÇO</h2>
-            <p>CEP:</p>
-            <input class="inputt" type="number" placeholder="00000-000">
-            <p>ENDEREÇO:</p>
-            <input class="inputt" type="text" placeholder="Rua, 123 exemplo">
-            <p>BAIRRO:</p>
-            <input class="inputt" type="text" placeholder="bairro exemplo">
-            <p>COMPLEMENTO:</p>
-            <input class="inputt" type="text" placeholder="complemento exemplo">
-            <p>NÚMERO:</p>
-            <input class="inputt" type="number" placeholder="123">
-            <p>CIDADE:</p>
-            <input class="inputt" type="text" placeholder="cidade exemplo">
-            <p>ESTADO:</p>
-            <input class="inputt" type="text" placeholder="estado exemplo">
+      <!-- Modo edição -->
+      <div id="modo-edicao" class="campos-edicao">
 
+        <label>Email</label>
+        <input class="inputt" type="text" id="edit-email" placeholder="seu@email.com">
+
+        <label>Telefone</label>
+        <input class="inputt" type="text" id="edit-telefone" placeholder="(71) 99999-9999">
+
+        <label>CEP</label>
+        <input class="inputt" type="text" id="edit-cep" placeholder="00000-000">
+
+        <label>Endereço</label>
+        <input class="inputt" type="text" id="edit-endereco" placeholder="Rua, Número">
+
+        <label>Bairro</label>
+        <input class="inputt" type="text" id="edit-bairro" placeholder="Bairro">
+
+        <label>Complemento</label>
+        <input class="inputt" type="text" id="edit-complemento" placeholder="Complemento">
+
+        <label>Cidade</label>
+        <input class="inputt" type="text" id="edit-cidade" placeholder="Cidade">
+
+        <label>Estado</label>
+        <input class="inputt" type="text" id="edit-estado" placeholder="Estado">
+
+        <p id="msg-salvo"></p>
+
+        <div class="botoes-perfil">
+          <button class="botao-cancelar" onclick="cancelarEdicao()">Cancelar</button>
+          <button class="botao" onclick="salvarPerfil()">Salvar</button>
         </div>
+
+      </div>
+
     </div>
-    <a href="tela_aluno.html"><button>CANCELAR</button></a>
-    <a href="tela_aluno.html"><button>SALVAR</button></a>
+  </div>
+</main>
 
-    <footer>
-        <p>&copy; 2026 Sistema de Matrícula Escolar. Todos os direitos reservados.</p>
-    </footer>
+<footer>
+  <p>&copy; 2026 Sistema de Matrícula Escolar. Todos os direitos reservados.</p>
+</footer>
+
+<script>
+// Carrega dados salvos ao abrir a página
+document.addEventListener('DOMContentLoaded', () => {
+  const dados = JSON.parse(localStorage.getItem('perfil-aluno')) || {};
+
+  if (dados.email)     { document.getElementById('ver-email').textContent     = dados.email; }
+  if (dados.telefone)  { document.getElementById('ver-telefone').textContent  = dados.telefone; }
+  if (dados.endereco)  { document.getElementById('ver-endereco').textContent  = dados.endereco; }
+  if (dados.bairro)    { document.getElementById('ver-bairro').textContent    = dados.bairro; }
+  if (dados.cidade && dados.estado) {
+    document.getElementById('ver-cidade').textContent = `${dados.cidade}/${dados.estado}`;
+  }
+});
+
+// Mostra campos de edição
+function ativarEdicao() {
+  const dados = JSON.parse(localStorage.getItem('perfil-aluno')) || {};
+
+  document.getElementById('edit-email').value       = dados.email      || '';
+  document.getElementById('edit-telefone').value    = dados.telefone   || '';
+  document.getElementById('edit-cep').value         = dados.cep        || '';
+  document.getElementById('edit-endereco').value    = dados.endereco   || '';
+  document.getElementById('edit-bairro').value      = dados.bairro     || '';
+  document.getElementById('edit-complemento').value = dados.complemento|| '';
+  document.getElementById('edit-cidade').value      = dados.cidade     || '';
+  document.getElementById('edit-estado').value      = dados.estado     || '';
+
+  document.getElementById('modo-visualizacao').style.display = 'none';
+  document.getElementById('modo-edicao').style.display = 'block';
+}
+
+// Esconde campos de edição sem salvar
+function cancelarEdicao() {
+  document.getElementById('modo-edicao').style.display = 'none';
+  document.getElementById('modo-visualizacao').style.display = 'block';
+}
+
+// Salva dados no localStorage e volta para visualização
+function salvarPerfil() {
+  const dados = {
+    email:        document.getElementById('edit-email').value.trim(),
+    telefone:     document.getElementById('edit-telefone').value.trim(),
+    cep:          document.getElementById('edit-cep').value.trim(),
+    endereco:     document.getElementById('edit-endereco').value.trim(),
+    bairro:       document.getElementById('edit-bairro').value.trim(),
+    complemento:  document.getElementById('edit-complemento').value.trim(),
+    cidade:       document.getElementById('edit-cidade').value.trim(),
+    estado:       document.getElementById('edit-estado').value.trim(),
+  };
+
+  localStorage.setItem('perfil-aluno', JSON.stringify(dados));
+
+  // Atualiza visualização
+  document.getElementById('ver-email').textContent    = dados.email     || '—';
+  document.getElementById('ver-telefone').textContent = dados.telefone  || '—';
+  document.getElementById('ver-endereco').textContent = dados.endereco  || '—';
+  document.getElementById('ver-bairro').textContent   = dados.bairro    || '—';
+  document.getElementById('ver-cidade').textContent   = dados.cidade && dados.estado
+    ? `${dados.cidade}/${dados.estado}` : '—';
+
+  cancelarEdicao();
+
+  // Mensagem de sucesso
+  const msg = document.getElementById('msg-salvo');
+  msg.style.color = 'green';
+  msg.textContent = '✓ Perfil salvo com sucesso!';
+  setTimeout(() => msg.textContent = '', 2000);
+}
+</script>
 
 </body>
-
 </html>
