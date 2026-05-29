@@ -1,0 +1,81 @@
+.pagina_criar_professor {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #8aa7ad, #93b7be);
+}
+
+.header_professor {
+  padding: 20px;
+}
+
+.logo_professor {
+  width: 150px;
+  display: block;
+}
+
+.container_conta {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.criar_conta {
+  width: 100%;
+  max-width: 420px;
+  background: #DBD8AE;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 28px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.criar_conta h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.criar_conta .inputt {
+  height: 45px;
+  width: 100%;
+  max-width: 340px;
+  border-radius: 22px;
+  border: none;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: center;
+  font-size: 16px;
+}
+
+.criar_conta .botao {
+  width: 100%;
+  max-width: 300px;
+  background: #2c3e50;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.criar_conta .botao:hover {
+  background: #34495e;
+}
+
+.criar_conta .botao_secundario {
+  background: #6b7280;
+}
+
+.footer_professor {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
