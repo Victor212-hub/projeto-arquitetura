@@ -160,11 +160,11 @@ input[type="radio"] {
 
 /*FIM DA ESTILIZAÇÃO DA TELA DE LOGIN PRINCIPAL/*
 
+/* ===== MENU LATERAL ===== */
 
 .topo h2{
     color:white;
 }
-/* ===== MENU LATERAL ===== */
 
 .checkbox_aluno input {
     display: none;

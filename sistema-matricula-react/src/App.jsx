@@ -6,6 +6,8 @@ import CriarProfessor from './pages/CriarProfessor'
 import CriarTurma from './pages/CriarTurma'
 import Professor from './pages/Professor'
 import Aluno from './pages/Aluno'
+import PerfilAluno from './pages/PerfilAluno'
+import BoletimAluno from './pages/BoletimAluno'
 
 
 function App() {
@@ -40,11 +42,11 @@ function App() {
   }
 
   if (paginaAtual === 'perfilAluno'){
-    return <h1>Perfil do Aluno</h1>
+    return <PerfilAluno mudarPagina={setPaginaAtual}/>  
   }
 
   if (paginaAtual === 'boletimAluno'){
-    return <h1>Boletim do Aluno</h1>
+    return <BoletimAluno mudarPagina={setPaginaAtual} />
   }
 
   return <Login mudarPagina={setPaginaAtual} />
