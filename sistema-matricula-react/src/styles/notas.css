@@ -1,0 +1,132 @@
+.pagina_notas {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #8aa7ad, #93b7be);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  flex-direction: column;
+}
+
+.card_notas {
+  background: white;
+  border-radius: 22px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+  padding: 30px;
+  width: 90%;
+  max-width: 1000px;
+  overflow-x: auto;
+  text-align: center;
+}
+
+.card_notas h1 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.card_notas label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.card_notas select {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  background: #ecf0f1;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.status-nota {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 12px;
+  height: 20px;
+  color: #27ae60;
+}
+
+.tabela_notas_container {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+.tabela_notas {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  min-width: 900px;
+}
+
+.tabela_notas th {
+  background: #2c3e50;
+  color: white;
+  padding: 12px 8px;
+  font-weight: bold;
+}
+
+.tabela_notas td {
+  padding: 10px 6px;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.tabela_notas tr:hover td {
+  background: #f5f6fa;
+}
+
+.tabela_notas input[type="number"] {
+  width: 60px;
+  padding: 6px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.tabela_notas input[type="number"]:focus {
+  border: 1px solid #2c3e50;
+}
+
+.media-cell {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.aprovado {
+  color: #27ae60;
+}
+
+.recuperacao {
+  color: #f39c12;
+}
+
+.reprovado {
+  color: #e74c3c;
+}
+
+.msg-turma {
+  text-align: center;
+  color: #888;
+  padding: 20px;
+}
+
+.card_notas > button {
+  margin-top: 24px;
+  padding: 11px 24px;
+  border: none;
+  border-radius: 22px;
+  background: #2c3e50;
+  color: white;
+  cursor: pointer;
+}
+
+.card_notas > button:hover {
+  background: #34495e;
+}

@@ -52,9 +52,9 @@ function Professor({ mudarPagina }) {
           ➕ Adicionar Atividade
         </a>
 
-        <a href="#" className="botao">
+         <button onClick={() => mudarPagina('notas')} className="botao">
           📝 Lançar Notas
-        </a>
+        </button>
 
         <button onClick={() => mudarPagina('turmas')} className="botao">
           📋 Ver Turmas

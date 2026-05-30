@@ -8,6 +8,7 @@ import Professor from './pages/Professor'
 import Aluno from './pages/Aluno'
 import PerfilAluno from './pages/PerfilAluno'
 import BoletimAluno from './pages/BoletimAluno'
+import Notas from './pages/Notas'
 
 
 function App() {
@@ -47,6 +48,10 @@ function App() {
 
   if (paginaAtual === 'boletimAluno'){
     return <BoletimAluno mudarPagina={setPaginaAtual} />
+  }
+
+  if (paginaAtual === 'notas') {
+    return <Notas mudarPagina={setPaginaAtual} />
   }
 
   return <Login mudarPagina={setPaginaAtual} />
