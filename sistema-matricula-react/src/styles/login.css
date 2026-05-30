@@ -159,5 +159,14 @@ footer {
   display: block;
   
 }
-/*FIM DA ESTILIZAÇÃO DA TELA DE LOGIN PRINCIPAL/*
+/*FIM DA ESTILIZAÇÃO DA TELA DE LOGIN PRINCIPAL*/
+
+.msg_erro{
+    color: #e74c3c;
+    font-size: 13px;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
 
