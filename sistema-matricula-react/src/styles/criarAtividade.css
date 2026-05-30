@@ -1,0 +1,66 @@
+.pagina_atividade {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #8aa7ad, #93b7be);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card_atividade {
+  width: 100%;
+  max-width: 520px;
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.16);
+  display: flex;
+  flex-direction: column;
+}
+
+.card_atividade h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.card_atividade label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.card_atividade input,
+.card_atividade select,
+.card_atividade textarea {
+  padding: 11px;
+  border-radius: 14px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+}
+
+.card_atividade textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.acoes_atividade {
+  display: flex;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.acoes_atividade button {
+  flex: 1;
+  padding: 11px;
+  border: none;
+  border-radius: 22px;
+  background: #2c3e50;
+  color: white;
+  cursor: pointer;
+}
+
+.acoes_atividade button:hover {
+  background: #34495e;
+}

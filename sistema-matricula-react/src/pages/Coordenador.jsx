@@ -8,9 +8,17 @@ function Coordenador({ mudarPagina }) {
         <h2>Coordenação</h2>
 
         <nav>
-          <a href="#">🎓 Alunos</a>
-          <a href="#">👨‍🏫 Professores</a>
-          <a href="#">📚 Turmas</a>
+          <button type="button" onClick={() => mudarPagina('aluno')}>
+            🎓 Alunos
+          </button>
+
+          <button type="button" onClick={() => mudarPagina('professor')}>
+            👨‍🏫 Professores
+          </button>
+
+          <button type="button" onClick={() => mudarPagina('criarTurma')}>
+            📚 Turmas
+          </button>
 
           <button type="button" onClick={() => mudarPagina('login')}>
             🚪 Sair
@@ -51,27 +59,27 @@ function Coordenador({ mudarPagina }) {
         <section className="acoes">
           <h2>Ações rápidas</h2>
 
-        {/* Botões para criar aluno, professor e turma */}
+          {/* Botões para criar aluno, professor e turma */}
 
           <div className="botoes">
             <button className="botao"
-            type="button" 
-            onClick ={() => mudarPagina('criarAluno')}
-              >
-            ➕ Cadastrar Aluno
+              type="button"
+              onClick={() => mudarPagina('criarAluno')}
+            >
+              ➕ Cadastrar Aluno
             </button>
 
-           <button className="botao"
-            type="button"
-            onClick={() => mudarPagina('criarProfessor')}
+            <button className="botao"
+              type="button"
+              onClick={() => mudarPagina('criarProfessor')}
             >
-            ➕ Cadastrar Professor
+              ➕ Cadastrar Professor
             </button>
-              
-            <button className="botao" 
-            type="button" 
-            onClick={() => mudarPagina('criarTurma')}>
-            ➕ Criar Turma
+
+            <button className="botao"
+              type="button"
+              onClick={() => mudarPagina('criarTurma')}>
+              ➕ Criar Turma
             </button>
 
           </div>

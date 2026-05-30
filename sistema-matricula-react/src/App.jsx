@@ -9,6 +9,7 @@ import Aluno from './pages/Aluno'
 import PerfilAluno from './pages/PerfilAluno'
 import BoletimAluno from './pages/BoletimAluno'
 import Notas from './pages/Notas'
+import CriarAtividade from './pages/CriarAtividade'
 
 
 function App() {
@@ -52,6 +53,10 @@ function App() {
 
   if (paginaAtual === 'notas') {
     return <Notas mudarPagina={setPaginaAtual} />
+  }
+
+  if (paginaAtual === 'criarAtividade') {
+    return <CriarAtividade mudarPagina={setPaginaAtual} />
   }
 
   return <Login mudarPagina={setPaginaAtual} />
