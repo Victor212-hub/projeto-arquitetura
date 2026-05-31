@@ -1,0 +1,118 @@
+.pagina_aluno {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #8aa7ad, #93b7be);
+}
+
+/* MENU LATERAL */
+
+.checkbox_aluno input {
+  display: none;
+}
+
+.botao_label {
+  font-size: 28px;
+  cursor: pointer;
+  padding: 12px 15px;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 3;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menu {
+  list-style: none;
+  position: fixed;
+  top: 0;
+  left: -240px;
+  width: 240px;
+  height: 100%;
+  background: #2c3e50;
+  padding-top: 70px;
+  transition: .3s;
+  z-index: 2;
+}
+
+.menu li {
+  margin: 5px 0;
+}
+
+.menu a,
+.menu button {
+  color: white;
+  text-decoration: none;
+  padding: 14px 22px;
+  display: block;
+  transition: .25s;
+  background: transparent;
+  border: none;
+  width: 100%;
+  text-align: left;
+  font: inherit;
+  cursor: pointer;
+}
+
+.menu a:hover,
+.menu button:hover {
+  background: #34495e;
+}
+
+#menu-toggle:checked ~ .menu {
+  left: 0;
+}
+
+/* CONTEÚDO */
+
+.pagina_aluno .conteudo {
+  flex: 1;
+  padding: 30px 15px;
+  text-align: center;
+}
+
+.pagina_aluno .conteudo h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.pagina_aluno .conteudo h2 {
+  margin-bottom: 20px;
+}
+
+/* MATÉRIAS */
+
+.pagina_aluno .materia {
+  background: white;
+  width: 340px;
+  max-width: 90%;
+  margin: 12px auto;
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: .25s;
+}
+
+.pagina_aluno .materia:hover {
+  transform: translateY(-4px);
+}
+
+.pagina_aluno .materia b {
+  font-size: 1.2rem;
+  color: #2c3e50;
+}
+
+.pagina_aluno .materia p {
+  margin-top: 6px;
+  color: #555;
+}
+
+.pagina_aluno footer {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;
+}

@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #1f2937;
+}
+
+/*  BODY  */
+
+body {
+    background: linear-gradient(135deg, #8aa7ad, #93B7BE);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/*  HEADER  */
+
+.logo {
+    max-width: 180px;
+    position: relative;
+    left: 10px;
+    right: 10px;
+}
+
+/*  ÁREA CENTRAL  */
+
+.area_login {
+    min-height: 93vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*  CARD  */
+
+.card_login {
+    background: white;
+    padding: 30px;
+    border-radius: 22px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+    width: 450px;
+    text-align: center;
+}
+
+/*  TÍTULO  */
+
+.card_login h2 {
+    margin-bottom: 20px;
+    margin-top: -20px;
+}
+
+/*  ABAS  */
+
+.tabs {
+    display: flex;
+    background: #ecf0f1;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.tabs label {
+    flex: 1;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: .3s;
+}
+
+/* esconder radios */
+
+input[type="radio"] {
+    display: none;
+}
+
+/* destaque aba ativa */
+
+#coord:checked~.tabs label[for="coord"],
+#prof:checked~.tabs label[for="prof"],
+#aluno:checked~.tabs label[for="aluno"] {
+    background: #2c3e50;
+    color: white;
+}
+
+/*  FORMULÁRIOS  */
+
+.formularios {
+    position: relative;
+    height: 160px;
+}
+
+.form {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: .3s;
+    pointer-events: none;
+}
+
+/* mostrar os formulário ativo */
+
+#coord:checked~.formularios .coord,
+#prof:checked~.formularios .prof,
+#aluno:checked~.formularios .aluno {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+/*  INPUTS  */
+
+.inputt {
+    width: 100%;
+    padding: 11px;
+    margin: 10px 0;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    border: none;
+}
+
+/*  BOTÃO  */
+
+.botao{
+    display:inline-block;
+    width:100%;
+    padding:11px;
+    border-radius:25px;
+    background:#2c3e50;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+    text-decoration:none;
+}
+
+
+.botao:hover{
+    background:#34495e;
+}
+
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+.logo_login {
+  width: 10px;
+  display: block;
+  
+}
+/*FIM DA ESTILIZAÇÃO DA TELA DE LOGIN PRINCIPAL*/
+
+.msg_erro{
+    color: #e74c3c;
+    font-size: 13px;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+

@@ -1,0 +1,107 @@
+.pagina_turma {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #8aa7ad, #93b7be);
+}
+
+.pagina_turma .topo {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 20px;
+}
+
+.pagina_turma .logo {
+  width: 150px;
+}
+
+.pagina_turma .topo h1 {
+  color: #2c3e50;
+  font-weight: 700;
+}
+
+/* Card principal */
+
+.pagina_turma .area {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.pagina_turma .card {
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 22px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+  width: 900px;
+  max-width: 100%;
+  text-align: center;
+}
+
+.pagina_turma .card h2 {
+  margin-bottom: 25px;
+  color: #2c3e50;
+}
+
+/* Lista das turmas */
+
+.pagina_turma .lista-turmas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* Card de cada turma */
+
+.pagina_turma .turma {
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.pagina_turma .turma:hover {
+  transform: translateY(-5px);
+}
+
+.pagina_turma .turma h3 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+/* Botões */
+
+.pagina_turma button {
+  margin-top: 12px;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 20px;
+  background: #2c3e50;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.pagina_turma button:hover {
+  background: #34495e;
+}
+
+.pagina_turma .botao-voltar {
+  max-width: 260px;
+  margin-top: 28px;
+}
+
+/* Rodapé */
+
+.pagina_turma footer {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 18px;
+}   
