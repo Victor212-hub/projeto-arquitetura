@@ -160,3 +160,46 @@
   margin-top: 30px;
   border-radius: 12px;
 }
+
+.Coordenador .botao,
+.Coordenador .sidebar button {
+  transition: all 0.25s ease;
+}
+
+.Coordenador .botao:hover,
+.Coordenador .sidebar button:hover {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.Coordenador .botao:active,
+.Coordenador .sidebar button:active {
+  transform: translateY(1px) scale(0.97);
+}
+
+.Coordenador .status {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.Coordenador .status.ativo {
+  color: #155724;
+  background: #b5f6c4;
+}
+
+.Coordenador .status.inativo {
+  color: #721c24;
+  background: #eb4250;
+}
+
+.Coordenador .status.pendente {
+  color: #856404;
+  background: #fff3cd;
+}

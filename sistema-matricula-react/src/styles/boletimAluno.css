@@ -61,3 +61,21 @@
   text-align: center;
   padding: 20px;
 }
+
+@media print {
+  .acoes_boletim,
+  .pagina_boletim footer {
+    display: none;
+  }
+
+  .pagina_boletim {
+    background: white;
+  }
+
+  .container_boletim {
+    box-shadow: none;
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+}

@@ -92,25 +92,50 @@ function Professor({ mudarPagina }) {
                 <td>João Silva</td>
                 <td>2026001</td>
                 <td>8.5</td>
-                <td>Aprovado</td>
+                <td>
+
+                  <span className=" situacao aprovado">
+                    🟢Aprovado
+                  </span>
+
+                </td>
               </tr>
               <tr>
                 <td>Maria Souza</td>
                 <td>2026002</td>
-                <td>7.2</td>
-                <td>Aprovado</td>
+                <td>6.2</td>
+                <td>
+
+                  <span className="situacao recuperacao">
+                    🟡Em recuperação
+                  </span>
+                  
+                  </td>
               </tr>
               <tr>
                 <td>Pedro Lima</td>
                 <td>2026003</td>
                 <td>5.8</td>
-                <td>Recuperação</td>
+
+                <td>
+                  <span className="situacao reprovado">
+                    🔴Reprovado
+                  </span>
+                  
+                  </td>
+
               </tr>
               <tr>
                 <td>Ana Costa</td>
                 <td>2026004</td>
                 <td>9.1</td>
-                <td>Aprovado</td>
+                <td>
+
+                  <span className=" situacao aprovado">
+                    🟢Aprovado
+                  </span>
+
+                </td>
               </tr>
             </tbody>
           </table>

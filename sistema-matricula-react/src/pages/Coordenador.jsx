@@ -109,21 +109,33 @@ function Coordenador({ mudarPagina }) {
                 <td>João Silva</td>
                 <td>2026001</td>
                 <td>3º Ano A</td>
-                <td>Ativo</td>
+                <td>
+                 <span className="status ativo">
+                    🟢Ativo
+                  </span>
+                </td>
               </tr>
 
               <tr>
                 <td>Maria Souza</td>
                 <td>2026002</td>
                 <td>2º Ano B</td>
-                <td>Ativo</td>
+                <td>
+                  <span className="status inativo">
+                    🔴Inativo
+                  </span>
+                </td>
               </tr>
 
               <tr>
                 <td>Pedro Lima</td>
                 <td>2026003</td>
                 <td>1º Ano C</td>
-                <td>Ativo</td>
+                <td>
+                  <span className="status ativo">
+                    🟢Ativo
+                  </span>
+                </td>
               </tr>
             </tbody>
           </table>

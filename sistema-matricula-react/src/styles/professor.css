@@ -177,3 +177,30 @@ footer {
     padding: 20px;
     margin-top: auto;
 }
+
+.pagina_professor .situacao {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.pagina_professor .situacao.aprovado {
+  color: #155724;
+  background: #d4edda;
+}
+
+.pagina_professor .situacao.recuperacao {
+  color: #856404;
+  background: #fcecb9;
+}
+
+.pagina_professor .situacao.reprovado {
+  color: #721c24;
+  background: #eb4250;
+}
