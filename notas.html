@@ -1,105 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-	<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lançamento de Notas</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .area-notas {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .card-notas {
+    background: white;
+    border-radius: 22px;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.25);
+    padding: 30px;
+    width: 90%;
+    max-width: 900px;
+    overflow-x: auto;
+  }
+
+  .seletor-turma {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+
+  .seletor-turma select {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    background: #ecf0f1;
+    cursor: pointer;
+    outline: none;
+  }
+
+  #tabela-notas {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+  }
+
+  #tabela-notas th {
+    background: #2c3e50;
+    color: white;
+    padding: 12px 8px;
+    font-weight: bold;
+  }
+
+  #tabela-notas td {
+    padding: 10px 6px;
+    border-bottom: 1px solid #ecf0f1;
+  }
+
+  #tabela-notas tr:hover td {
+    background: #f5f6fa;
+  }
+
+  #tabela-notas input[type="number"] {
+    width: 60px;
+    padding: 6px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.2s;
+  }
+
+  #tabela-notas input[type="number"]:focus {
+    border: 1px solid #2c3e50;
+  }
+
+  .media-cell {
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  .aprovado { color: #27ae60; }
+  .recuperacao { color: #f39c12; }
+  .reprovado { color: #e74c3c; }
+
+  #status-nota {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 12px;
+    height: 20px;
+  }
+
+  .msg-turma {
+    text-align: center;
+    color: #888;
+    padding: 20px;
+  }
+</style>
 </head>
 <body>
-        
-    <header>
-        <a href="index.html">
-            <img src="./logo.png.png" alt="Logo do site" class="logo">
-        </a>
-    </header>
-    <H1>Lançamento de notas </H1>
-    
-   <table style="margin:auto;" border="4" cellpadding="10" bordercolor="#121212"
-		<tr>
-<th>Alunos</th>
-<th>Matemática</th>
-<th>Geografia</th>
-<th>Ciências</th>
-<th>Português</th>
-<th>Física</th>
-<th>Química</th>
-</tr>
 
-<tr>
-<td>Aluno 1</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
+<header class="topo">
+  <a href="index.html">
+    <img src="./logo.png" alt="Logo do site" class="logo">
+  </a>
+  <h1>Sistema de Matrícula Escolar</h1>
+</header>
 
-<tr>
-<td>Aluno 2</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
+<main class="area-notas">
 
-<tr>
-<td>Aluno 3</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
+  <div class="card-notas">
 
-<tr>
-<td>Aluno 4</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
+    <h2>Lançamento de Notas</h2>
 
-<tr>
-<td>aluno 5</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
+    <div class="seletor-turma">
+      <select id="seletor-turma" onchange="carregarTurma(this.value)">
+        <option value="">Selecione a turma</option>
+        <option value="3A">3º Ano A</option>
+        <option value="3B">3º Ano B</option>
+        <option value="2A">2º Ano A</option>
+      </select>
+    </div>
 
-<tr>
-<td>aluno 6</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+    <table id="tabela-notas">
+      <tr>
+        <th>Aluno</th>
+        <th>Matemática</th>
+        <th>Geografia</th>
+        <th>Ciências</th>
+        <th>Português</th>
+        <th>Física</th>
+        <th>Química</th>
+        <th>Média</th>
+      </tr>
+      <tr>
+        <td colspan="8" class="msg-turma">Selecione uma turma para carregar os alunos</td>
+      </tr>
+    </table>
 
-</tr> 	
+    <p id="status-nota"></p>
 
-</table>
+  </div>
 
+</main>
 
+<footer>
+  <p>&copy; 2026 Sistema de Matrícula Escolar. Todos os direitos reservados.</p>
+</footer>
 
-
- <footer>
-        <p>&copy; 2026 Sistema de Matrícula Escolar. Todos os direitos reservados.</p>
-    </footer>
-
+<script src="js/notas.js"></script>
 </body>
 </html>
