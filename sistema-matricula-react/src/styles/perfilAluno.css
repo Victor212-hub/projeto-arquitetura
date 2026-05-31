@@ -1,112 +1,178 @@
+.pagina_perfil_aluno {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #8aa7ad, #93b7be);
+}
+
+.topo_perfil {
+  padding: 25px;
+  text-align: center;
+}
+
+.topo_perfil h1 {
+  color: #2c3e50;
+  margin-top: 10px;
+}
+
+.botao_logo {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.botao_logo:hover {
+  background: transparent;
+}
+
+.logo {
+  max-width: 160px;
+}
+
 .area-perfil {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 30px 20px;
-  }
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px 20px;
+}
 
-  .card-perfil {
-    background: white;
-    border-radius: 22px;
-    box-shadow: 0 12px 35px rgba(0,0,0,0.25);
-    padding: 35px;
-    width: 100%;
-    max-width: 500px;
-  }
+.perfil-wrapper {
+  width: 100%;
+  max-width: 500px;
+}
 
-  .card-perfil h2 {
-    text-align: center;
-    margin-bottom: 24px;
-    color: #2c3e50;
-  }
+.card-perfil {
+  background: white;
+  border-radius: 22px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+  padding: 35px;
+  width: 100%;
+}
 
-  .info-linha {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 0;
-    border-bottom: 1px solid #ecf0f1;
-    font-size: 15px;
-  }
+.card-perfil h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #2c3e50;
+}
 
-  .info-linha span:first-child {
-    color: #888;
-    font-weight: bold;
-  }
+.info-linha {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 10px 0;
+  border-bottom: 1px solid #ecf0f1;
+  font-size: 15px;
+}
 
-  .info-linha span:last-child {
-    color: #2c3e50;
-  }
+.info-linha span:first-child {
+  color: #888;
+  font-weight: bold;
+}
 
-  .campos-edicao {
-    display: none;
-    margin-top: 20px;
-  }
+.info-linha span:last-child {
+  color: #2c3e50;
+  text-align: right;
+}
 
-  .campos-edicao label {
-    font-size: 13px;
-    color: #888;
-    margin-left: 4px;
-  }
+.campos-edicao {
+  margin-top: 20px;
+}
 
-  .campos-edicao .inputt {
-    width: 100%;
-    background: #ecf0f1;
-    border: 1px solid #ccc;
-    margin-bottom: 4px;
-  }
+.campos-edicao label {
+  display: block;
+  font-size: 13px;
+  color: #888;
+  margin: 10px 0 4px 4px;
+}
 
-  .botoes-perfil {
-    display: flex;
-    gap: 12px;
-    margin-top: 24px;
-  }
+.campos-edicao .inputt {
+  width: 100%;
+  background: #ecf0f1;
+  border: 1px solid #ccc;
+  margin-bottom: 4px;
+  padding: 11px;
+  border-radius: 20px;
+  text-align: center;
+}
 
-  .botao-cancelar {
-    display: inline-block;
-    width: 100%;
-    padding: 11px;
-    border-radius: 25px;
-    background: #ecf0f1;
-    color: #2c3e50;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.3s;
-    border: none;
-    text-align: center;
-  }
+.botoes-perfil {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
 
-  .botao-cancelar:hover {
-    background: #bdc3c7;
-  }
+.botao,
+.botao-cancelar {
+  display: inline-block;
+  width: 100%;
+  padding: 11px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: none;
+  text-align: center;
+}
 
-  .menu-lateral {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    margin-bottom: 20px;
-    flex-wrap: wrap;
-  }
+.botao {
+  background: #2c3e50;
+  color: white;
+}
 
-  .menu-lateral a {
-    background: white;
-    padding: 8px 16px;
-    border-radius: 20px;
-    color: #2c3e50;
-    font-size: 14px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    transition: 0.3s;
-  }
+.botao:hover {
+  background: #34495e;
+}
 
-  .menu-lateral a:hover {
-    background: #2c3e50;
-    color: white;
-  }
+.botao-cancelar {
+  background: #ecf0f1;
+  color: #2c3e50;
+}
 
-  #msg-salvo {
-    text-align: center;
-    font-size: 13px;
-    margin-top: 10px;
-    height: 20px;
-  }
+.botao-cancelar:hover {
+  background: #bdc3c7;
+}
+
+.menu-lateral {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.menu-lateral button {
+  background: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  color: #2c3e50;
+  font-size: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-lateral button:hover {
+  background: #2c3e50;
+  color: white;
+}
+
+.msg-salvo {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 10px;
+  height: 20px;
+  color: green;
+}
+
+.pagina_perfil_aluno footer {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;
+}

@@ -21,9 +21,9 @@ export function loginUsuario(login, senha, perfil) {
 
   const usuarioEncontrado = usuarios.find(
     (usuario) =>
-      usuario.login === login &&
-      usuario.senha === senha &&
-      usuario.perfil === perfil
+      String(usuario.login).trim() === String(login).trim() &&
+      String(usuario.senha).trim() === String(senha).trim() &&
+      String(usuario.perfil).trim() === String(perfil).trim()
   )
 
   if (!usuarioEncontrado) {
