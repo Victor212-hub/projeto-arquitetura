@@ -1,4 +1,5 @@
 import '../styles/coordenador.css'
+import { logoutUsuario } from '../services/authService'
 
 function Coordenador({ mudarPagina }) {
   return (
@@ -20,7 +21,10 @@ function Coordenador({ mudarPagina }) {
             📚 Turmas
           </button>
 
-          <button type="button" onClick={() => mudarPagina('login')}>
+          <button type="button" onClick={() => {
+            logoutUsuario()
+            mudarPagina('login')
+          }}>
             🚪 Sair
           </button>
         </nav>

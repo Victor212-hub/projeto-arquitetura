@@ -1,5 +1,6 @@
 import '../styles/perfilAluno.css'
 import logo from '../assets/logo.png.png'
+import { logoutUsuario } from '../services/authService'
 
 
 function PerfilAluno({ mudarPagina }) {
@@ -35,7 +36,10 @@ function PerfilAluno({ mudarPagina }) {
                         </button>
                     </li>
                     <li>
-                        <button type="button" onClick={() => mudarPagina('login')}>
+                        <button type="button" onClick={() => {
+                            logoutUsuario()
+                            mudarPagina('login')
+                        }}>
                             🚪 Sair
                         </button>
                     </li>

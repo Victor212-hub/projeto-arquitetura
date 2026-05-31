@@ -1,4 +1,5 @@
 import '../styles/professor.css'
+import { logoutUsuario } from '../services/authService'
 
 function Professor({ mudarPagina }) {
   return (
@@ -18,7 +19,10 @@ function Professor({ mudarPagina }) {
           <button type="button" onClick={() => mudarPagina('notas')}>
             📝 Lançar Notas
           </button>
-          <button type="button" onClick={() => mudarPagina('login')}>
+          <button type="button" onClick={() => {
+            logoutUsuario()
+            mudarPagina('login')
+          }}>
             🚪 Sair
           </button>
         </nav>

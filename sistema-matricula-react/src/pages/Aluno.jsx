@@ -1,4 +1,5 @@
 import '../styles/aluno.css'
+import { logoutUsuario } from '../services/authService'
 
 function Aluno({ mudarPagina }) {
     return (
@@ -29,7 +30,10 @@ function Aluno({ mudarPagina }) {
                     </li>
 
                     <li>
-                        <button type="button" onClick={() => mudarPagina('login')}>
+                        <button type="button" onClick={() => {
+                            logoutUsuario()
+                            mudarPagina('login')
+                        }}>
                             🚪 Sair
                         </button>
                     </li>
