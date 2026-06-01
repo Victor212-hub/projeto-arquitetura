@@ -1,4 +1,4 @@
-import logo from '../assets/logo.png.png'
+import logo from '../assets/openenroll_com_fundo.png'
 import '../styles/criarProfessor.css'
 
 function CriarProfessor({ mudarPagina }) {

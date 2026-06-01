@@ -1,5 +1,5 @@
 import '../styles/turma.css'
-import logo from '../assets/logo.png.png'
+import logo from '../assets/openenroll_com_fundo.png'
 
 function CriarTurma({ mudarPagina }) {
   return (

@@ -1,61 +1,58 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background: #f5f7fb;
-  color: #1f2937;
-}
-
-/*  BODY  */
-
-body {
+    font-family: Arial, sans-serif;
     background: linear-gradient(135deg, #8aa7ad, #93B7BE);
+    color: #1f2937;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-/*  HEADER  */
-
-.logo {
-    max-width: 180px;
-    position: relative;
-    left: 10px;
-    right: 10px;
-}
-
-/*  ÁREA CENTRAL  */
+/* ÁREA CENTRAL */
 
 .area_login {
-    min-height: 93vh;
+    min-height: 93.5vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/*  CARD  */
+/* CARD */
 
 .card_login {
     background: white;
-    padding: 30px;
+    padding: 40px;
     border-radius: 22px;
     box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
-    width: 450px;
+    width: 480px;
+    max-width: 90%;
     text-align: center;
 }
 
-/*  TÍTULO  */
+/* LOGO */
+
+.logo_login {
+    width: 340px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+/* TÍTULO */
 
 .card_login h2 {
     margin-bottom: 20px;
-    margin-top: -20px;
+    margin-top: 0;
+    color: #1f2937;
+    font-size: 32px;
 }
 
-/*  ABAS  */
+/* ABAS */
 
 .tabs {
     display: flex;
@@ -73,13 +70,13 @@ body {
     transition: .3s;
 }
 
-/* esconder radios */
+/* ESCONDER RADIOS */
 
 input[type="radio"] {
     display: none;
 }
 
-/* destaque aba ativa */
+/* DESTAQUE ABA ATIVA */
 
 #coord:checked~.tabs label[for="coord"],
 #prof:checked~.tabs label[for="prof"],
@@ -88,7 +85,7 @@ input[type="radio"] {
     color: white;
 }
 
-/*  FORMULÁRIOS  */
+/* FORMULÁRIOS */
 
 .formularios {
     position: relative;
@@ -104,7 +101,7 @@ input[type="radio"] {
     pointer-events: none;
 }
 
-/* mostrar os formulário ativo */
+/* MOSTRAR FORMULÁRIO ATIVO */
 
 #coord:checked~.formularios .coord,
 #prof:checked~.formularios .prof,
@@ -114,37 +111,49 @@ input[type="radio"] {
     pointer-events: auto;
 }
 
-/*  INPUTS  */
+/* INPUTS */
 
 .inputt {
     width: 100%;
     padding: 11px;
     margin: 10px 0;
     border-radius: 20px;
-    border: 1px solid #ccc;
+    border: none;
     text-align: center;
+    background: #f8f9fa;
+}
+
+/* BOTÃO */
+
+.botao {
+    display: inline-block;
+    width: 100%;
+    padding: 11px;
+    border-radius: 25px;
+    background: #2c3e50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
     border: none;
 }
 
-/*  BOTÃO  */
-
-.botao{
-    display:inline-block;
-    width:100%;
-    padding:11px;
-    border-radius:25px;
-    background:#2c3e50;
-    color:white;
-    font-size:16px;
-    cursor:pointer;
-    transition:0.3s;
-    text-decoration:none;
+.botao:hover {
+    background: #34495e;
 }
 
+/* MENSAGEM DE ERRO */
 
-.botao:hover{
-    background:#34495e;
+.msg_erro {
+    color: #e74c3c;
+    font-size: 13px;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
 }
+
+/* RODAPÉ */
 
 footer {
     background: #2c3e50;
@@ -153,20 +162,3 @@ footer {
     padding: 20px;
     margin-top: auto;
 }
-
-.logo_login {
-  width: 10px;
-  display: block;
-  
-}
-/*FIM DA ESTILIZAÇÃO DA TELA DE LOGIN PRINCIPAL*/
-
-.msg_erro{
-    color: #e74c3c;
-    font-size: 13px;
-    margin-top: 10px;
-    text-align: center;
-    font-weight: bold;
-}
-
-

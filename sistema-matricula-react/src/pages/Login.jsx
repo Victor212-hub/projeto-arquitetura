@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import logo from '../assets/logo.png.png'
+import logo from '../assets/openenroll_sem_fundo.png'
 import '../styles/login.css'
 import { loginUsuario } from '../services/authService'
 
@@ -55,7 +55,7 @@ function Login({ mudarPagina }) {
     <main>
       <div className="area_login">
         <div className="card_login">
-          <img src={logo} alt="Logo do Sistema de Matrícula" className="logo" />
+          <img src={logo} alt="Logo OpenEnroll" className="logo_login" />
 
           <h2>Acesso ao sistema</h2>
 
@@ -160,7 +160,7 @@ function Login({ mudarPagina }) {
       </div>
 
       <footer>
-        <p>&copy; 2026 Sistema de Matrícula Escolar</p>
+        <p>&copy; 2026 OpenEnroll - Sistema de Matrícula</p>
       </footer>
     </main>
   )
